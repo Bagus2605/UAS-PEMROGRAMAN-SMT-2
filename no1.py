@@ -26,26 +26,24 @@ while status:
             print(num, data["Nama"])
             num += 1
 
-    input = input("\nMasukkan Angka 1-3 :")
-
+    userInput = input("\nMasukkan Angka 1-3 :")
 
     def tampil(indeks):
-        print("Nama = ", dataMahasiswa[indeks]['Nama'])
-        print("Nim = ", dataMahasiswa[indeks]['NIM'])
-        print("Jurusan = ", dataMahasiswa[indeks]['Jurusan'])
+        print("Nama     = ", dataMahasiswa[indeks]['Nama'])
+        print("Nim      = ", dataMahasiswa[indeks]['NIM'])
+        print("Jurusan  = ", dataMahasiswa[indeks]['Jurusan'])
 
-
-    if input == '1':
+    if userInput == '1':
         tampil(0)
         cek = input("Apakah Anda Ingin Melanjutkan Program? (Ya/No) : ")
         if cek == 'No':
             status = False
-    elif input == '2':
+    elif userInput == '2':
         tampil(1)
         cek = input("Apakah Anda Ingin Melanjutkan Program? (Ya/No) : ")
         if cek == 'No':
             status = False
-    elif input == '2':
+    elif userInput == '2':
         tampil(2)
         cek = input("Apakah Anda Ingin Melanjutkan Program? (Ya/No) : ")
         if cek == 'No':
