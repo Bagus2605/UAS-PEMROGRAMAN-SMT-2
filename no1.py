@@ -37,11 +37,19 @@ while status:
 
     if input == '1':
         tampil(0)
-
+        cek = input("Apakah Anda Ingin Melanjutkan Program? (Ya/No) : ")
+        if cek == 'No':
+            status = False
     elif input == '2':
         tampil(1)
+        cek = input("Apakah Anda Ingin Melanjutkan Program? (Ya/No) : ")
+        if cek == 'No':
+            status = False
     elif input == '2':
         tampil(2)
+        cek = input("Apakah Anda Ingin Melanjutkan Program? (Ya/No) : ")
+        if cek == 'No':
+            status = False
     else:
         print("Hanya dapat memasukkan Angka 1-3")
         cek = input("Apakah Anda Ingin Melanjutkan Program? (Ya/No) : ")
